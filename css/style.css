@@ -219,6 +219,47 @@ hr{
     padding: 3rem;
 }
 
+/*Contact*/
+#copyright{
+    color: whitesmoke;
+    margin-bottom: 3%;
+}
+
+
+
+#contactPage a:hover, #contactPage a:active{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color:#33FFF3;
+    padding: 0.7rem;
+    background-color: #affaff54;
+    justify-content: center;
+    
+}
+
+#contactPage{
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end; /* Aligns the items to the right */
+    gap: 1rem; /* Adds space between the links */
+    
+}
+
+#contactPage a{
+    color:#33FFF3;
+    padding: 0.3rem;
+    border-radius: 20px;
+    border: 1px transparent solid;
+    display: flex;
+    flex-flow: row;
+    justify-items: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+
 
 @media screen and (max-width: 576px) {
     nav {
