@@ -227,7 +227,8 @@ hr{
     #introText h1 {
         font-size: 35px;
     }
-    #introText p, #aboutPara, #education, .skill-container, .certified{
+    #introText p, #aboutPara, #education, .skill-container, .certified
+    {
         font-size: 17px;
     }
     h2 {
@@ -256,7 +257,7 @@ hr{
     .projectsEach{
         display: flex;
         flex-flow: row wrap;
-        background-color: #33333329;
+        background-color: #99d9f25a;
     }
 }
 
@@ -285,11 +286,12 @@ hr{
         white-space: space-evenly;
         margin-bottom: 5%;
         margin-top: 5%;
+        font-size: 17px;
     }
     .projectsEach{
         display: flex;
         flex-flow: row wrap;
-        background-color: #33333329;
+        background-color: #99d9f25a;
     }
 }
 
@@ -309,7 +311,7 @@ hr{
     .projectsEach{
         display: flex;
         flex-flow: row;
-        background-color: #33333329;
+        background-color: #99d9f25a;
     }
     #projectsID{
         display: flex;
@@ -319,6 +321,7 @@ hr{
         white-space: space-evenly;
         margin-bottom: 5%;
         margin-top: 5%;
+        font-size: 25px;
     }
 }
 
@@ -338,7 +341,7 @@ hr{
     .projectsEach{
         display: flex;
         flex-flow: row;
-        background-color: #33333329;
+        background-color: #99d9f25a;
     }
     #projectsID{
         display: flex;
