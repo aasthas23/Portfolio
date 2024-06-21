@@ -1,0 +1,352 @@
+/**/
+* {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-left: 3%;
+    margin-right: 3%;
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 1%;
+    font-family: "Amatic SC", sans-serif;
+    position: fixed;
+    top: 0;
+    width: 85%; /* Adjust to fit within margins */
+    background-color: black; /* Ensure background color covers content */
+    z-index: 1000; /* Ensure nav stays above other content */
+}
+
+nav p {
+    color: #33FFF3;
+    margin: 0;
+    /* font-size: 30px; */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+}
+
+nav ul a {
+    
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 1rem;
+}
+
+nav ul a:hover,
+nav ul a:active {
+    color: aqua;
+    border: 1px solid transparent;
+    background-color: rgba(0, 255, 255, 0.212);
+    border-radius: 30px;
+    padding: 1.3rem;
+}
+
+/*Home division */
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-right: 3%;
+    height: auto;
+    margin-top: 15%;
+    margin-bottom: 30%;
+}
+
+#intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#animation {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#home h1{
+    color: #33FFF3;
+    font-family: "Amatic SC", sans-serif;
+    /* font-size: 100px; */
+}
+
+#home p{
+    color: whitesmoke;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+.desktop {
+    width: 100%;
+    max-width: 300px;
+    position: relative;
+}
+
+.screen {
+    width: 100%;
+    height: 200px;
+    background-color: #333;
+    border-radius: 5px;
+    border: 2px solid #33FFF3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.cursor {
+    width: 2px;
+    height: 20px;
+    background-color: #33FFF3;
+    animation: blink 1s infinite;
+}
+
+.stand {
+    width: 60px;
+    height: 10px;
+    background-color: #33FFF3;
+    margin: 20px auto 0;
+    border-radius: 5px;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    50.01%, 100% {
+        opacity: 0;
+    }
+}
+h2{
+    color: white;
+    font-family: "Amatic SC", sans-serif;
+}
+
+/* About */
+#about{
+    color: white;
+    font-family: "Amatic SC", sans-serif;
+    text-align: justify;
+    margin-bottom: 10%;
+}
+
+hr{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border: 3px solid #33FFF3;
+}
+
+#about ul, #education{
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.skill-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem; /* Adjust gap as needed */
+    flex-wrap: wrap;
+}
+
+#skillset1,
+#skillset2,
+#skillset3{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+#skillset1 p,
+#skillset2 p,
+#skillset3 p,
+#skillset4 p{
+    border: 1px solid #33FFF3;
+    background-color: #33fff128;
+    padding: 0.5rem;
+    margin-top: 10px;
+}
+
+/* Projects*/
+.projects{
+    display: flex;
+    flex-flow: column;
+    font-family: "Amatic SC", sans-serif;
+    
+}
+
+
+#projectsID img{
+    width: 10%;
+    height: auto;
+    background-color: #ffffffc5;
+}
+
+#projectsID a{
+    color: rgb(220, 253, 249);
+    border: 1px transparent solid;
+    border-radius: 0;
+    align-items: center;
+    text-decoration: none;
+}
+
+#projectsID a:hover{
+    color: whitesmoke;
+}
+
+#projectsID p{
+    justify-content: center;
+    color: rgb(220, 253, 249);
+    border: 1px transparent solid;
+    border-radius: 0;
+    padding: 3rem;
+}
+
+
+@media screen and (max-width: 576px) {
+    nav {
+        font-size: 15px;
+    }
+    #introText h1 {
+        font-size: 35px;
+    }
+    #introText p, #aboutPara, #education, .skill-container, .certified{
+        font-size: 17px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    #intro {
+        flex-direction: column;
+    }
+    #introText, #animation {
+        width: 100%;
+        text-align: center;
+    }
+    .desktop {
+        max-width: 200px;
+    }
+    .screen {
+        height: 150px;
+    }
+    #projectsID{
+        display: flex;
+        width: 100%;
+        white-space: space-evenly;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+    .projectsEach{
+        display: flex;
+        flex-flow: row wrap;
+        background-color: #33333329;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    nav {
+        font-size: 17px;
+    }
+    #introText h1 {
+        font-size: 50px;
+    }
+    #introText p, #aboutPara, #education, .skill-container , .certified{
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    .desktop {
+        max-width: 250px;
+    }
+    .screen {
+        height: 180px;
+    }
+    #projectsID{
+        display: flex;
+        width: 100%;
+        white-space: space-evenly;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+    .projectsEach{
+        display: flex;
+        flex-flow: row wrap;
+        background-color: #33333329;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    nav {
+        font-size: 20px;
+    }
+    #introText h1 {
+        font-size: 75px;
+    }
+    #introText p, #aboutPara, #education, .skill-container, .certified{
+        font-size: 23px;
+    }
+    h2 {
+        font-size: 37px;
+    }
+    .projectsEach{
+        display: flex;
+        flex-flow: row;
+        background-color: #33333329;
+    }
+    #projectsID{
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        width: 50%;
+        white-space: space-evenly;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    nav {
+        font-size: 27px;
+    }
+    #introText h1 {
+        font-size: 100px;
+    }
+    #introText p, #aboutPara, #education, .skill-container, .certified {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 45px;
+    }
+    .projectsEach{
+        display: flex;
+        flex-flow: row;
+        background-color: #33333329;
+    }
+    #projectsID{
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        width: 50%;
+        white-space: space-evenly;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+}
